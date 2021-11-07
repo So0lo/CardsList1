@@ -65,8 +65,8 @@ export class MainPage extends Component {
                 <UserWrapper>
                     <UserHeader>Enter user id</UserHeader>
                     <UserInput
-                    value={this.state.userId}
-                    onChange={this.changeHadler}
+                        value={this.state.userId}
+                        onChange={this.changeHadler}
                     />
                     <CustomLink to={`/user/${this.state.userId}`}>Go to user</CustomLink>
                 </UserWrapper>
