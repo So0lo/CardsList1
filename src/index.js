@@ -4,6 +4,7 @@ import {SearchUserPage, UserPage, MainPage, NotFoundPage} from './components/Pag
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {YearsAndEggs} from './playground/hooks/YearsAndEggs';
 import './index.css';
+import {Test, TextToggler} from './playground/hooks/useEffect';
 
 // ReactDOM.render(
 //   <YearsAndEggs/>,
@@ -11,15 +12,20 @@ import './index.css';
 // );
 
 ReactDOM.render(
-  <Router>
-    <Routes>
-      <Route path='/' element={<MainPage/>}/>
-      <Route path='/search' element={<SearchUserPage/>}/>
-      <Route path='/user/:userId' element={<UserPage/>}/>
-      <Route path='*' element={<NotFoundPage/>}/>
-    </Routes>
-  </Router>,
+  <TextToggler/>,
   document.getElementById('root')
 );
+
+// ReactDOM.render(
+//   <Router>
+//     <Routes>
+//       <Route path='/' element={<MainPage/>}/>
+//       <Route path='/search' element={<SearchUserPage/>}/>
+//       <Route path='/user/:userId' element={<UserPage/>}/>
+//       <Route path='*' element={<NotFoundPage/>}/>
+//     </Routes>
+//   </Router>,
+//   document.getElementById('root')
+// );
 
 
