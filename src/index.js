@@ -4,7 +4,8 @@ import {SearchUserPage, UserPage, MainPage, NotFoundPage} from './components/Pag
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {YearsAndEggs} from './playground/hooks/YearsAndEggs';
 import './index.css';
-import {Test, TextToggler} from './playground/hooks/useEffect';
+import {Example} from './playground/hooks/useCallback';
+// import {TextToggler} from './playground/hooks/useEffect';
 
 // ReactDOM.render(
 //   <YearsAndEggs/>,
@@ -12,7 +13,7 @@ import {Test, TextToggler} from './playground/hooks/useEffect';
 // );
 
 ReactDOM.render(
-  <TextToggler/>,
+  <Example/>,
   document.getElementById('root')
 );
 
