@@ -4,7 +4,9 @@ import {SearchUserPage, UserPage, MainPage, NotFoundPage} from './components/Pag
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {YearsAndEggs} from './playground/hooks/YearsAndEggs';
 import './index.css';
-import {Example} from './playground/hooks/useCallback';
+// import { Table } from './playground/problem/Table';
+import {Reducer} from './playground/hooks/useReducer';
+// import {Example} from './playground/hooks/useCallback';
 // import {TextToggler} from './playground/hooks/useEffect';
 
 // ReactDOM.render(
@@ -13,7 +15,7 @@ import {Example} from './playground/hooks/useCallback';
 // );
 
 ReactDOM.render(
-  <Example/>,
+  <Reducer/>,
   document.getElementById('root')
 );
 
